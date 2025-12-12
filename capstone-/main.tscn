@@ -15,7 +15,7 @@
 [node name="sky" parent="." instance=ExtResource("1_lquwl")]
 
 [node name="llama" parent="." instance=ExtResource("2_7mycd")]
-transform = Transform3D(-0.4, 8.876468e-12, 6.0398314e-08, -1.2206522e-11, 0.39999998, -0.00013962634, -6.0398314e-08, -0.00013962634, -0.39999998, 5.038135, 0.95355606, -13.910955)
+transform = Transform3D(-0.4, 8.876468e-12, 6.0398314e-08, -1.2206522e-11, 0.39999998, -0.00013962634, -6.0398314e-08, -0.00013962634, -0.39999998, 8.913603, 13.069059, -64.63053)
 script = null
 
 [node name="floor" type="StaticBody3D" parent="."]
