@@ -1,8 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://cr81msgr862cv"]
-
-[ext_resource type="PackedScene" uid="uid://olt1ts7brvfg" path="res://obj_1_llama_split0.glb" id="1_l2lbc"]
-[ext_resource type="Script" uid="uid://c4jif7mlcxbp3" path="res://llama.gd" id="2_xorni"]
-
-[node name="Llama" instance=ExtResource("1_l2lbc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -69.113106, -67.29304, 0)
-script = ExtResource("2_xorni")
