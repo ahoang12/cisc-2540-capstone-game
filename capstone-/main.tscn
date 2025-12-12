@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://btyb8p2lkgrue"]
 
-[ext_resource type="PackedScene" uid="uid://bs2i7xrpsxbfv" path="res://player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://chlt0ddousxms" path="res://sky.tscn" id="1_lquwl"]
 [ext_resource type="Script" path="res://floor.gd" id="2_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://w74faayk7qfb" path="res://llama.tscn" id="2_7mycd"]
 [ext_resource type="Script" path="res://platform_spawner.gd" id="2_h2yge"]
 [ext_resource type="PackedScene" uid="uid://5g55ghi2mldc" path="res://platform.tscn" id="3_1bvp3"]
 
@@ -14,8 +14,7 @@
 
 [node name="sky" parent="." instance=ExtResource("1_lquwl")]
 
-[node name="Player" parent="." instance=ExtResource("1_ig7tw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+[node name="Llama" parent="." instance=ExtResource("2_7mycd")]
 
 [node name="floor" type="StaticBody3D" parent="."]
 script = ExtResource("2_1bvp3")
