@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://chlt0ddousxms" path="res://sky.tscn" id="1_lquwl"]
 [ext_resource type="Script" path="res://floor.gd" id="2_1bvp3"]
-[ext_resource type="PackedScene" uid="uid://w74faayk7qfb" path="res://llama.tscn" id="2_7mycd"]
+[ext_resource type="PackedScene" uid="uid://cr81msgr862cv" path="res://llama.tscn" id="2_7mycd"]
 [ext_resource type="Script" path="res://platform_spawner.gd" id="2_h2yge"]
 [ext_resource type="PackedScene" uid="uid://5g55ghi2mldc" path="res://platform.tscn" id="3_1bvp3"]
 
@@ -15,7 +15,8 @@
 [node name="sky" parent="." instance=ExtResource("1_lquwl")]
 
 [node name="llama" parent="." instance=ExtResource("2_7mycd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -185.62967, -11.07299, 17.1875)
+transform = Transform3D(-0.4, 8.876468e-12, 6.0398314e-08, -1.2206522e-11, 0.39999998, -0.00013962634, -6.0398314e-08, -0.00013962634, -0.39999998, 5.038135, 0.95355606, -13.910955)
+script = null
 
 [node name="floor" type="StaticBody3D" parent="."]
 script = ExtResource("2_1bvp3")
@@ -31,7 +32,7 @@ mesh = SubResource("BoxMesh_h2yge")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 15)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.881406, 15)
 cull_mask = 1047553
 current = true
 
