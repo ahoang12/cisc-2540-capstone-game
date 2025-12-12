@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://w74faayk7qfb"]
+[gd_scene load_steps=4 format=3 uid="uid://w74faayk7qfb"]
 
-[ext_resource type="PackedScene" uid="uid://dcutq2s2ntvwk" path="res://obj_1_llama_split0.gltf" id="1_l2lbc"]
+[ext_resource type="PackedScene" path="res://obj_1_llama_split0.gltf" id="1_l2lbc"]
 [ext_resource type="Script" uid="uid://dmku0t7rllaw5" path="res://llama.gd" id="2_xorni"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_xorni"]
 
 [node name="Llama" instance=ExtResource("1_l2lbc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -69.113106, -67.29304, 0)
@@ -11,4 +13,8 @@ script = ExtResource("2_xorni")
 transform = Transform3D(-0.039999004, 0.00028203588, -6.0398317e-09, 0.00028203588, 0.039999004, 4.2587288e-11, 6.039982e-09, 0, -0.04, 69.78334, 64.84266, 5.4172873)
 
 [node name="Node1" parent="Node0" index="0"]
-transform = Transform3D(0.99932903, 0.036557313, 0.002246179, -0.036626257, 0.9974479, 0.0612861, 1.08287e-08, -0.06132727, 0.99811745, -109.95873, 120.8198, 205.90765)
+transform = Transform3D(0.99932843, 0.036643706, 1.0871304e-11, -0.03657536, 0.9974644, 0.06104852, 0.0022370445, -0.06100754, 0.99813443, -109.95873, 120.81979, 205.90765)
+
+[node name="StaticBody3D" parent="Node0/Node1" index="0"]
+disable_mode = 2
+physics_material_override = SubResource("PhysicsMaterial_xorni")
