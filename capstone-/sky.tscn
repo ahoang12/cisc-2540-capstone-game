@@ -2,12 +2,12 @@
 
 [ext_resource type="Shader" uid="uid://7sfo3gmyli63" path="res://sky.gdshader" id="1_gr5xt"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_gr5xt"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yh5pb"]
 shader = ExtResource("1_gr5xt")
-shader_parameter/skyColor = Color(0.5089774, 0.7389559, 0.8506292, 1)
+shader_parameter/skyColor = Color(0.5985, 0.79182506, 0.95, 1)
 
 [sub_resource type="Sky" id="Sky_gr5xt"]
-sky_material = SubResource("ShaderMaterial_gr5xt")
+sky_material = SubResource("ShaderMaterial_yh5pb")
 radiance_size = 4
 
 [sub_resource type="Environment" id="Environment_dptxg"]
@@ -15,7 +15,7 @@ background_mode = 2
 background_energy_multiplier = 1.24
 sky = SubResource("Sky_gr5xt")
 ambient_light_source = 3
-ambient_light_color = Color(0.38705927, 0.6192829, 0.8836, 1)
+ambient_light_color = Color(0.38891828, 0.6159877, 0.89894295, 1)
 glow_enabled = true
 glow_intensity = 1.04
 glow_strength = 0.1
