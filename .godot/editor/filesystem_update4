@@ -1,0 +1,5 @@
+res://Levels/Level.tscn
+res://Player/Player.gd
+res://Player/Player.tscn
+res://Levels/Road/Road.tscn
+res://Levels/Rock/Rock.tscn

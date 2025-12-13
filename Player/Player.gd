@@ -4,8 +4,8 @@ extends CharacterBody3D
 @onready var animation_player: AnimationPlayer = $Character/AnimationPlayer
 @onready var gui: Control = $gui
 
-const MOVE_SPEED: float = 8.0
-const JUMP_VELOCITY: float = 8.0  # Jump strength
+const MOVE_SPEED: float = 6.0
+const JUMP_VELOCITY: float = 8.5  # Jump strength
 const GRAVITY: float = 24.0  # Gravity strength
 const LANES: Array = [-2, 0, 2]  # Lane positions on x-axis
 

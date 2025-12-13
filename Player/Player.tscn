@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c2a5i2mnt6gur"]
 
-[ext_resource type="Script" path="res://Player/Player.gd" id="2"]
+[ext_resource type="Script" uid="uid://sfkdxmc4hheb" path="res://Player/Player.gd" id="2"]
 [ext_resource type="PackedScene" uid="uid://dgkfdqui7nsoo" path="res://assets/stylized_lowpoly_char/stylized_low_poly_animated_character.glb" id="2_ngmab"]
 [ext_resource type="AudioStream" uid="uid://brlwwb6hww3tg" path="res://assets/sounds/coinpickup.wav" id="3_6lajn"]
 
@@ -41,5 +41,14 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 14.0
 text = "Coins: "
+
+[node name="label2" type="Label" parent="gui"]
+layout_mode = 0
+offset_left = 796.0
+offset_top = 611.99994
+offset_right = 1108.0
+offset_bottom = 634.99994
+scale = Vector2(1.1, 1.1)
+text = "Press \"Up/Right/Left\" to move Character"
 
 [connection signal="area_entered" from="collision_area" to="." method="_on_collision_area_entered"]
